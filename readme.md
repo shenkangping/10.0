@@ -1,5 +1,11 @@
 # 工程配置指南
 
+## 安装maven
+
+windows上安装maven参考文档：http://wiki.jikexueyuan.com/project/maven/environment-setup.html
+
+## 配置开发工程
+
 直接使用IntelliJ IDEA打开这个目录即可。
 
 如果需要复制jar包到webroot/WEB-INF/lib下，可以执行命令：```mvn install```
