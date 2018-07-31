@@ -13,3 +13,9 @@
 ## 修改依赖的jar版本
 
 只需要更改pom.xml中的common-version属性即可。
+
+|common-version|含义|
+|--------------|----|
+|10.0-RELEASE-SNAPSHOT|10.0的测试版本快照|
+|10.0-SNAPSHOT|10.0的正式版本快照|
+|10.0|10.0的正式版本|
