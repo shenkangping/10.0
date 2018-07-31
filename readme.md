@@ -6,7 +6,9 @@
 
 ## 启动设计器
 
-使用com.fr.learn.Leaner启动设计器。
+如果希望正常的进行插件开发，使用```com.fr.learn.Leaner```启动设计器。
+
+如果希望进行设计器调试，则使用```com.fr.learn.Leaner4Debug``启动设计器。
 
 ## 修改依赖的jar版本
 
