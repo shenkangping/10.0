@@ -25,6 +25,7 @@ public class PdataPane extends AbstractTableDataPane<Pdata> {
     private final static double P = TableLayout.PREFERRED;
     private final static double F = TableLayout.FILL;
 
+
     private UITableEditorPane<ParameterProvider> parameterTableEditorPane;
     private UITextField tEditor;
 
@@ -42,7 +43,7 @@ public class PdataPane extends AbstractTableDataPane<Pdata> {
         //创建Others的配置控件
         tEditor = new UITextField();
         //创建预览按钮
-        UIButton preview = new UIButton(BaseUtils.readIcon("/com/fr/design/images/m_file/preview.png"));
+        final UIButton preview = new UIButton(BaseUtils.readIcon("/com/fr/design/images/m_file/preview.png"));
         preview.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 SwingUtilities.invokeLater(new Runnable() {
@@ -52,23 +53,43 @@ public class PdataPane extends AbstractTableDataPane<Pdata> {
                 });
             }
         });
+//        JPanel one = TableLayoutHelper.createTableLayoutPane(
+//                new Component[][] {{
+//                        tEditor,preview
+//                }},
+//                new double[] { P },
+//                new double[] { F,P}
+//        );
         JPanel one = TableLayoutHelper.createTableLayoutPane(
                 new Component[][] {{
                         tEditor,preview
                 }},
                 new double[] { P },
-                new double[] { F,P  }
+                new double[] { F,P}
         );
+
+
         //创建2行1列
-        TableLayoutHelper.createTableLayoutPane(
+       JPanel two= TableLayoutHelper.createTableLayoutPane(
                 new Component[][] {{
                         one
                 },{
                         parameterTableEditorPane
                 }},
-                new double[] { P,F },
+                new double[] { P,F},
                 new double[] { F }
+
         );
+
+//        this.add(one);
+
+//        this.getParent();
+        this.setLayout(new BorderLayout());
+        this.add(two);
+//        this.setLayout(new FlowLayout(FlowLayout.CENTER));
+//        LayoutManager layout = this.getLayout();
+        this.setBackground(Color.CYAN);
+
     }
 
 
@@ -90,6 +111,7 @@ public class PdataPane extends AbstractTableDataPane<Pdata> {
     public Pdata updateBean() {
         Pdata ob = new Pdata();
         ob.setOthers(tEditor.getText());
+        System.out.println("========the others param is :"+tEditor.getText()+"====");
         java.util.List<ParameterProvider> parameterProviderList = parameterTableEditorPane.update();
         Parameter[] parameters = parameterProviderList.toArray(new Parameter[parameterProviderList.size()]);
         ob.setParameters(parameters);

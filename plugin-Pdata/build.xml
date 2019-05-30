@@ -67,6 +67,10 @@
             <compilerarg line="-encoding UTF8 "/>
             <classpath refid="compile.classpath"/>
         </javac>
+        <taskdef name="pretreatment" classname="com.fr.plugin.pack.PluginPretreatmentTask">
+            <classpath refid="compile.classpath"/>
+        </taskdef>
+        <pretreatment baseDir="${basedir}"/>
     </target>
 
     <target name="jar_classes">

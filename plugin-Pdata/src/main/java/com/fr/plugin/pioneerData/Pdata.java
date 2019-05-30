@@ -23,7 +23,8 @@ public class Pdata extends AbstractParameterTableData {
         //有些时候参数需要我们自己重新计算一次，否则获取到的就是默认值
         parameters = Calculator.processParameters(calculator,parameters);
 
-        return null;
+        return PdataModel.createPdataModel(parameters,this.getOthers());
+
     }
 
     //假设我们除了参数之外，还有一些需要指定的配置项

@@ -17,7 +17,9 @@ public class PdataModel extends AbstractDataModel {
     private String others = StringUtils.EMPTY;
 
 
-    public PdataModel() {}
+    public PdataModel() {
+
+    }
 
     public static PdataModel createPdataModel(ParameterProvider[] parameters , String others) {
         PdataModel result = new PdataModel();

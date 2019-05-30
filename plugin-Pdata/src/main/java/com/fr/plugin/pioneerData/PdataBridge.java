@@ -35,6 +35,8 @@ public class PdataBridge extends AbstractTableDataDefineProvider{
 
     @Override
     public String iconPathForTableData() {
-        return "com/fr/plugin/pioneerData/1.png";
+//        return "com/fr/plugin/pioneerData/1.png";
+        return "/com/fr/design/images/m_file/preview.png";
     }
+
 }
