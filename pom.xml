@@ -12,6 +12,7 @@
     <modules>
         <module>plugin-function</module>
         <module>plugin-Pdata</module>
+        <module>pluginJSSCSSInput</module>
     </modules>
     <dependencies>
         <!-- core包 -->
