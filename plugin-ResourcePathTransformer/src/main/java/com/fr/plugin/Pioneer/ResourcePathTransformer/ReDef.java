@@ -10,7 +10,7 @@ public class ReDef extends AbstractResourcePathTransformer {
     private final static String OldLoginPage ="/com/fr/web/controller/decision/entrance/resources/index.html";
     ///com/fr/web/controller/decision/entrance/resources/index.html
 //    public String myPath = "login.html";
-    public String myPath = "index.html";
+    public String myPath = "/index.html";
     /**
      *
      * @param oldPath   需要被替换的资源路径
