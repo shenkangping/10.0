@@ -22,7 +22,7 @@ public class PFileDef extends Component {
 
     @Override
     public ScriptPath script(RequestClient requestClient) {
-        return ScriptPath.build("demo.js");
+        return ScriptPath.build("/demo.js");
     }
 
     /**
@@ -33,7 +33,7 @@ public class PFileDef extends Component {
 
     @Override
     public StylePath style(RequestClient requestClient) {
-        return StylePath.build("demo.css");
+        return StylePath.build("/demo.css");
     }
 
     /**
