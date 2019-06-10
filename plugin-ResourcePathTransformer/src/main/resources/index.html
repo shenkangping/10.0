@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=${charset}">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>hello pioneer</title>
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <link rel="preload" href="${fineServletURL}/resources?path=/com/fr/web/ui/font/iconfont.woff" as="font" type="font/woff" crossorigin>
+    <!--css文件-->
+    ${styleTag}
+</head>
+<body>
+<div id="wrapper"></div>
+
+
+<script type="text/javascript">
+    window.Dec = window.Dec || {};
+    window.Dec.injection = window.Dec.injection || {};
+</script>
+
+<script type="text/javascript">
+    Dec.fineServletURL = "${fineServletURL}";
+
+    Dec.system = ${system};
+    Dec.personal = ${personal};
+
+</script>
+${scriptTag}
+<script>
+    Dec.start({
+        theme: {
+            name: "custom"
+        }
+    });
+</script>
+<script type="text/javascript">
+
+
+    var intval = setInterval(function(){
+
+        var  s=  $("div[class='bi-single bi-label dec-banner bi-text']");
+        if(s.size()>0){
+            s.text("hello pioneer");
+            clearInterval(intval);
+        }
+
+    },100)
+
+
+
+
+// $("div[class='bi-single bi-label dec-banner bi-text']").text("hello pioneer");
+
+
+</script>
+
+</body>
+
+</html>

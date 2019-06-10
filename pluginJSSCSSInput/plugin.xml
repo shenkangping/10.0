@@ -10,7 +10,6 @@
     <description><![CDATA[一些描述]]></description>
     <change-notes><![CDATA[一些修改 ]]></change-notes>
     <function-recorder class="com.fr.plugin.PioneerJscssinput.PJscssBridger"/>
-
     <extra-decision>
         <WebResourceProvider class="com.fr.plugin.PioneerJscssinput.PJscssBridger"/>
     </extra-decision>

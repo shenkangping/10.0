@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<plugin>
+    <id>com.fr.plugin.PioneerResourcePathTransformer</id>
+    <name><![CDATA[测试PioneerResourcePathTransformer]]></name>
+    <active>yes</active>
+    <version>1.0</version>
+    <env-version>10.0~10.0</env-version>
+    <jartime>2018-07-31</jartime>
+    <vendor>pioneer</vendor>
+    <description><![CDATA[一些描述]]></description>
+    <change-notes><![CDATA[一些修改 ]]></change-notes>
+
+    <function-recorder class="com.fr.plugin.Pioneer.ResourcePathTransformer.ReDef"/>
+
+    <extra-core>
+        <ResourcePathTransformer class="com.fr.plugin.Pioneer.ResourcePathTransformer.ReDef"/>
+    </extra-core>
+
+
+</plugin>

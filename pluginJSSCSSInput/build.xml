@@ -12,7 +12,7 @@
     <property name="current-version" value="${plugin.version}"/>
     <property name="current-id" value="${plugin.id}"/>
     <property name="plugin-version" value="${current-version}"/>
-    <property name="plugin-name" value="pluginJSSCSSInput"/>
+    <property name="plugin-name" value="PioneerJscssinput"/>
     <property name="plugin-jar" value="fr-plugin-${plugin-name}-${plugin-version}.jar"/>
     <target name="prepare">
         <delete dir="${classes}"/>

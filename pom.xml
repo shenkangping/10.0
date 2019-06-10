@@ -13,6 +13,8 @@
         <module>plugin-function</module>
         <module>plugin-Pdata</module>
         <module>pluginJSSCSSInput</module>
+        <module>plugin-ResourcePathTransformer</module>
+        <module>plugin-ResourcePathTransformer</module>
     </modules>
     <dependencies>
         <!-- core包 -->
